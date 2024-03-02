@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TextInput from "../components/shared/TextInput";
+import TextInput from "../components/Shared/TextInput";
 import { makeAuthenticatedPOSTRequest } from "../utils/serverHelpers";
 
 const CreatePlaylistModal = ({ closeModal }) => {

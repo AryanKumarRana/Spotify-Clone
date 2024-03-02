@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import TextInput from "../components/shared/TextInput";
-import PasswordInput from "../components/shared/PasswordInput";
+import TextInput from "../components/Shared/TextInput";
+import PasswordInput from "../components/Shared/PasswordInput";
 import { Link, useNavigate } from "react-router-dom";
 import { makeUnauthenticatedPOSTRequest } from "../utils/serverHelpers";
 import { useCookies } from "react-cookie";
