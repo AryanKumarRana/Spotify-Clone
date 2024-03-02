@@ -2,7 +2,7 @@ import LoggedInContainer from "../containers/LoggedInContainer";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { makeAuthenticatedGETRequest } from "../utils/serverHelpers";
-import SingleSongCard from "../components/shared/SingleSongCard";
+import SingleSongCard from "../components/Shared/SingleSongCard";
 
 const SearchPage = () => {
   const [isIputFocused, setIsInputFocused] = useState(false);
