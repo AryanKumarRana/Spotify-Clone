@@ -2,7 +2,7 @@ import LoggedInContainer from "../containers/LoggedInContainer";
 import { Icon } from '@iconify/react';
 import { useState, useEffect } from "react";
 import { makeAuthenticatedGETRequest } from "../utils/serverHelpers";
-import ExploreSongCard from "../components/shared/ExploreSongCard";
+import ExploreSongCard from "../components/Shared/ExploreSongCard";
 import { useParams } from "react-router-dom";
 
 const ExploreComponent = () => {
