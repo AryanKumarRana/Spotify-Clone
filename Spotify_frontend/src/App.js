@@ -27,10 +27,14 @@ function App() {
     localStorage.clear();
   };
 
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [password, setPassword] = useState()
+
   axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('deploy-mern-lwhq.vercel.app/register', {email, password})
+    axios.post('deploy-mern-lwhq.vercel.app/register', {name, email, password})
     .then(result => console.log(result))
     .catch(err => console.log(err))
   }
