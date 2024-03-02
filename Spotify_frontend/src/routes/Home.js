@@ -1,8 +1,8 @@
 import spotify_logo from "../assests/images/spotify_logo.png";
 import { Icon } from "@iconify/react";
-import IconText from "../components/shared/IconText";
+import IconText from "../components/Shared/IconText";
 import { Link } from "react-router-dom";
-import TextWithHover from "../components/shared/TextWithHover";
+import TextWithHover from "../components/Shared/TextWithHover";
 
 const focusCardsData = [
   {
