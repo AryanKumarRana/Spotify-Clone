@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 // import { useParams } from "react-router-dom";
 import LoggedInContainer from "../containers/LoggedInContainer";
 import { makeAuthenticatedGETRequest } from "../utils/serverHelpers";
-import SingleSongCard from "../components/shared/SingleSongCard";
+import SingleSongCard from "../components/Shared/SingleSongCard";
 
 const SinglePlaylistView = () => {
   const [playlistDetails, setPlaylistDetails] = useState({});
