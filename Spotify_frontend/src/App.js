@@ -13,6 +13,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import songContext from "./contexts/songContext";
 import { useCookies } from "react-cookie";
 import ExploreComponent from "./routes/Explore";
+import axios from 'axios';
 // npx tailwindcss@2 build src/index.css -c tailwind.config.js -o src/output.css this command is used to update written in taliwind.config.js file to output.css
 function App() {
   const [currentSong, setCurrentSong] = useState(null);
@@ -25,6 +26,14 @@ function App() {
     // export function from module
     localStorage.clear();
   };
+
+  axios.defaults.withCredentials = true;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post('deploy-mern-lwhq.vercel.app/register', {name, email, password})
+    .then(result => console.log(result))
+    .catch(err => console.log(err))
+  }
 
   return (
     <div className="w-screen h-screen">

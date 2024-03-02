@@ -23,7 +23,13 @@ const app = express();
 //with the help of these two lines we have imported all code of express in our local files.
 const port = 8000;  //we can send request on any port like 8080, 3000 or any ...
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-lwhq.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 app.use(express.json());       //if any data is coming in my req.body then it will convert into json format
 
 //connect mongodb to our node app.
