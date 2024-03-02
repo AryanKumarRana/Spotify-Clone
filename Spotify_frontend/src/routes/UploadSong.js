@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import TextInput from "../components/shared/TextInput";
-import CloudinaryUpload from "../components/shared/CloudinaryUpload";
+import TextInput from "../components/Shared/TextInput";
+import CloudinaryUpload from "../components/Shared/CloudinaryUpload";
 import { makeAuthenticatedPOSTRequest } from "../utils/serverHelpers";
 import LoggedInContainer from "../containers/LoggedInContainer";
 
