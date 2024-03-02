@@ -25,7 +25,7 @@ const port = 8000;  //we can send request on any port like 8080, 3000 or any ...
 
 app.use(cors(
     {
-        origin: ["https://deploy-mern-lwhq.vercel.app"],
+        origin: ["https://spotify-clone-front-one.vercel.app/login"],
         methods: ["POST", "GET"],
         credentials: true
     }
