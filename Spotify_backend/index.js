@@ -42,6 +42,7 @@ mongoose.connect(
     })
     .then((x) => {
         document.write("Connected to Mongo!");
+        console.log("Connected to Mongo!");
     })
     .catch((err) => {
         console.log(err.message);
