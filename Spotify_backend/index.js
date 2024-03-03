@@ -35,9 +35,7 @@ app.use(express.json());       //if any data is coming in my req.body then it wi
 //connect mongodb to our node app.
 //mongoose.connect() takkes 2 argumnets: 1. which db to connect to (db url) ,,  2. Connections options
 mongoose.connect(
-    "mongodb+srv://aryanrana150303:"+
-    process.env.MONGO_PASSWORD +       //here we can write directly our password but when we will give our website to someone then they will have your username with your password and that's not right so we will use .env file and dotenv command to take password from .env file when ever we run it but when it comes to give your website to other then with whole website we will not give .env file and user then can make its own env file and write his/her password in it.
-    "@cluster0.6bozywn.mongodb.net/?retryWrites=true&w=majority", 
+    "mongodb+srv://aryanrana150303:PYpi1If155cqgoL3@cluster0.6bozywn.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0", 
     {
         useNewUrlParser: true,  //these two are lines are just setting in path of connecting to mongo so just memorize them.
         useUnifiedTopology: true,
