@@ -75,7 +75,7 @@ app.get("/", (req,res) => {
     //req contains all data for request
     //res contains all data for respond
 
-    res.send("Hello World");
+    res.send("Hello Worldssss");
 });
 
 app.use("/auth", authRoutes);   //eg i write in browser like mysite.com\auth then it will start to use authRoutes and if like mysite.com\auth\register then it will start to use (just see in auth.js file)
