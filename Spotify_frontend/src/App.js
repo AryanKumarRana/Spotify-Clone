@@ -34,7 +34,7 @@ function App() {
   axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('deploy-mern-lwhq.vercel.app/register', {name, email, password})
+    axios.post('spotify-clone-gray-eta-56.vercel.app', {name, email, password})
     .then(result => console.log(result))
     .catch(err => console.log(err))
   }
