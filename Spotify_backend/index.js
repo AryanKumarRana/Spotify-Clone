@@ -41,7 +41,7 @@ mongoose.connect(
         useUnifiedTopology: true,
     })
     .then((x) => {
-        console.log("Connected to Mongo!");
+        document.write("Connected to Mongo!");
     })
     .catch((err) => {
         console.log(err.message);
